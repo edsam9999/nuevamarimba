@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nuevamarimba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1eM-g2-7dY">
+                                <rect key="frame" x="0.0" y="50" width="852" height="259"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5V-Pk-cWc">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrf-tk-lw4">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="259"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0af-te-U5k"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lrf-tk-lw4" secondAttribute="trailing" id="4F6-HW-hYU"/>
+                                            <constraint firstItem="lrf-tk-lw4" firstAttribute="leading" secondItem="P5V-Pk-cWc" secondAttribute="leading" id="BLK-4e-0i9"/>
+                                            <constraint firstAttribute="bottom" secondItem="lrf-tk-lw4" secondAttribute="bottom" id="Qjt-IV-kmb"/>
+                                            <constraint firstAttribute="bottom" secondItem="lrf-tk-lw4" secondAttribute="bottom" id="Xib-Ji-b2p"/>
+                                            <constraint firstAttribute="trailing" secondItem="lrf-tk-lw4" secondAttribute="trailing" id="aco-RU-xbd"/>
+                                            <constraint firstItem="lrf-tk-lw4" firstAttribute="top" secondItem="P5V-Pk-cWc" secondAttribute="top" id="rnM-uX-4q6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-uv-KuR">
+                                        <rect key="frame" x="145.33333333333334" y="0.0" width="125.33333333333334" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1g-E8-6bx">
+                                                <rect key="frame" x="0.0" y="10" width="125.33333333333333" height="239"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChO-4U-PyC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstItem="P1g-E8-6bx" firstAttribute="top" secondItem="eSA-uv-KuR" secondAttribute="top" constant="10" id="PKZ-Ju-yAb"/>
+                                            <constraint firstItem="P1g-E8-6bx" firstAttribute="leading" secondItem="eSA-uv-KuR" secondAttribute="leading" id="RTR-Rh-QZl"/>
+                                            <constraint firstAttribute="bottom" secondItem="P1g-E8-6bx" secondAttribute="bottom" constant="10" id="TUU-03-UaJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="P1g-E8-6bx" secondAttribute="trailing" id="eAb-y6-TQY"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZQ-gO-94f">
+                                        <rect key="frame" x="290.66666666666669" y="0.0" width="125.33333333333331" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmb-vG-26C">
+                                                <rect key="frame" x="0.0" y="20" width="125.33333333333333" height="219"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2d-DA-YPg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="dmb-vG-26C" secondAttribute="trailing" id="1YJ-dt-xKg"/>
+                                            <constraint firstItem="dmb-vG-26C" firstAttribute="leading" secondItem="jZQ-gO-94f" secondAttribute="leading" id="OwS-La-Pox"/>
+                                            <constraint firstItem="dmb-vG-26C" firstAttribute="top" secondItem="jZQ-gO-94f" secondAttribute="top" constant="20" id="dC6-f6-TnJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="dmb-vG-26C" secondAttribute="bottom" constant="20" id="usw-oY-Wfh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVQ-wh-Rrt">
+                                        <rect key="frame" x="436" y="0.0" width="125.33333333333337" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHc-i3-pEA">
+                                                <rect key="frame" x="0.0" y="30" width="125.33333333333333" height="199"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aif-OJ-L6r"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="mHc-i3-pEA" secondAttribute="bottom" constant="30" id="4US-lJ-QOq"/>
+                                            <constraint firstAttribute="trailing" secondItem="mHc-i3-pEA" secondAttribute="trailing" id="A0v-mb-4MJ"/>
+                                            <constraint firstItem="mHc-i3-pEA" firstAttribute="leading" secondItem="lVQ-wh-Rrt" secondAttribute="leading" id="UtB-O9-hYM"/>
+                                            <constraint firstItem="mHc-i3-pEA" firstAttribute="top" secondItem="lVQ-wh-Rrt" secondAttribute="top" constant="30" id="baS-NU-MIy"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zcn-0r-1ye">
+                                        <rect key="frame" x="581.33333333333337" y="0.0" width="125.33333333333337" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39g-Pa-gLx">
+                                                <rect key="frame" x="0.0" y="40" width="125.33333333333333" height="179"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDp-9u-c5x"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstItem="39g-Pa-gLx" firstAttribute="top" secondItem="Zcn-0r-1ye" secondAttribute="top" constant="40" id="Gvf-ts-eh4"/>
+                                            <constraint firstAttribute="trailing" secondItem="39g-Pa-gLx" secondAttribute="trailing" id="TX2-9H-B9d"/>
+                                            <constraint firstItem="39g-Pa-gLx" firstAttribute="leading" secondItem="Zcn-0r-1ye" secondAttribute="leading" id="Tdv-JO-xVT"/>
+                                            <constraint firstAttribute="bottom" secondItem="39g-Pa-gLx" secondAttribute="bottom" constant="40" id="wHX-wL-1VT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-yg-bfh">
+                                        <rect key="frame" x="726.66666666666663" y="0.0" width="125.33333333333337" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpb-MO-rLa">
+                                                <rect key="frame" x="0.0" y="50" width="125.33333333333333" height="159"/>
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPS-H3-XCF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstItem="Hpb-MO-rLa" firstAttribute="leading" secondItem="9Db-yg-bfh" secondAttribute="leading" id="5bK-bI-aCW"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hpb-MO-rLa" secondAttribute="bottom" constant="50" id="9CJ-dF-X7e"/>
+                                            <constraint firstItem="Hpb-MO-rLa" firstAttribute="top" secondItem="9Db-yg-bfh" secondAttribute="top" constant="50" id="MML-SN-YH7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hpb-MO-rLa" secondAttribute="trailing" id="cGc-yP-ftr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1eM-g2-7dY" secondAttribute="bottom" constant="50" id="1FR-k7-egD"/>
+                            <constraint firstItem="1eM-g2-7dY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LVc-So-adU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eM-g2-7dY" secondAttribute="trailing" id="bUW-MR-Lez"/>
+                            <constraint firstItem="1eM-g2-7dY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="uyW-bi-Y25"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.887323943661976" y="-2.2900763358778624"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
